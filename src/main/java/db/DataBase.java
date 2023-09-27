@@ -3,15 +3,6 @@ package db;
 import java.sql.*;
 
 public class DataBase {
-    public static void main(String[] args) {
-        try {
-            Conn();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
-        }
-    }
     private static String PATH= "resources/DataBase/db.db";
 
     public static void setPATH(String PATH) {
