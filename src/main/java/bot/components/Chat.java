@@ -1,4 +1,4 @@
-package ru.shil.tgbot;
+package bot.components;
 
 public class Chat {
     private Long chat_id;

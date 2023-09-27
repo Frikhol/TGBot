@@ -1,4 +1,6 @@
-package ru.shil.tgbot;
+package app;
+
+import bot.api.Api;
 
 import java.net.URISyntaxException;
 

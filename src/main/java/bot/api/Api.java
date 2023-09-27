@@ -1,4 +1,4 @@
-package ru.shil.tgbot;
+package bot.api;
 
 import org.apache.http.NameValuePair;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
@@ -10,6 +10,7 @@ import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
 import org.json.JSONArray;
 import org.json.JSONObject;
+import bot.components.Chat;
 
 import java.io.IOException;
 import java.net.URI;
@@ -25,7 +26,7 @@ public class Api {
     final static String url = "https://api.telegram.org/bot";
     final static String token = "6680407275:AAHnsMio4Vgy496451eoYk8BWVVVwAz3FzQ";
     static CloseableHttpClient httpClient = HttpClients.createDefault();
-    private static final Map<Long,Chat> chats = new HashMap<>();
+    private static final Map<Long, Chat> chats = new HashMap<>();
 
     public static Map<Long,Chat> getChats(){
         return chats;
