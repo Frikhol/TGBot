@@ -24,7 +24,7 @@ import static java.util.Map.*;
 
 public class Api {
     final static String url = "https://api.telegram.org/bot";
-    final static String token = "6680407275:AAHnsMio4Vgy496451eoYk8BWVVVwAz3FzQ";
+    final static String token = "";
     static CloseableHttpClient httpClient = HttpClients.createDefault();
     private static final Map<Long, Chat> chats = new HashMap<>();
 
